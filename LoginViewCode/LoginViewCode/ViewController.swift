@@ -30,7 +30,7 @@ class ViewController: UIViewController {
         NSLayoutConstraint.activate([
         
             self.loginLabel.centerXAnchor.constraint(equalTo: self.view.centerXAnchor),
-            self.loginLabel.centerYAnchor.constraint(equalTo: self.view.centerYAnchor),
+            self.loginLabel.centerYAnchor.constraint(equalTo: self.view.centerYAnchor)
         ])
     }
     
