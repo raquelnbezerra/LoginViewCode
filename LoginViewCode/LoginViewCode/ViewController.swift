@@ -34,6 +34,7 @@ class ViewController: UIViewController {
         ])
     }
     
+    //com o override: Estou sobrescrevendo um comportamento padrão já nativo da linguagem.
     override func viewWillAppear(_ animated: Bool) {
         self.navigationController?.setNavigationBarHidden(true, animated: false)
     }
