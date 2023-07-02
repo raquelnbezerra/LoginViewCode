@@ -19,6 +19,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.loginScreen?.configTextFieldDelegate(delegate: self)
     }
     
     //com o override: Estou sobrescrevendo um comportamento padrão já nativo da linguagem.
@@ -27,5 +28,14 @@ class ViewController: UIViewController {
     }
 
 
+}
+
+extension ViewController:UITextFieldDelegate{
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+    }
+    
+    
 }
 
